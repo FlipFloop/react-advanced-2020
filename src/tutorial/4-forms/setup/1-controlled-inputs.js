@@ -15,7 +15,7 @@ const ControlledInputs = () => {
     if (firstName && email) {
       console.log(firstName + " " + email);
       console.log("form submitted");
-      const person = { id: new Date().getTime().toSring(), firstName, email };
+      const person = { id: new Date().getTime().toString(), firstName, email };
       setPeople((people) => {
         return [...people, person];
       });
